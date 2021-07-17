@@ -1,0 +1,45 @@
+@import '../Atoms/Typography.scss';
+// Colors
+@import '../Atoms/Color.scss';
+// $bg-color: hsl(256,33,10);
+// $dot-color: hsl(256,33,70);
+
+// // Dimensions
+// $dot-size: 1px;
+// $dot-space: 22px;
+
+// body {
+// 	background:
+// 		linear-gradient(90deg, $gray80 ($dot-space - $dot-size), transparent 1%) center,
+// 		linear-gradient($gray80 ($dot-space - $dot-size), transparent 1%) center,
+// 		$dot-color;
+// 	background-size: $dot-space $dot-space;
+// }
+
+.register-form{
+    display:grid;
+}
+
+label{
+    color:$gray90;
+}
+
+.glassy-input{
+    color:$gray90;
+    font-family: $title-fontfamily;
+    width: 35%;
+    margin:10px 0;
+    padding:8px 14px;
+    border: none;
+    background-color: rgba(245, 245, 245, 0.425);  
+    backdrop-filter: blur(50px);
+    outline: none !important;
+    border-radius:4px;
+    cursor: pointer;
+}
+
+::placeholder{
+    color:$gray40;
+    font-weight: 200;  
+}
+

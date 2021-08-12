@@ -2,7 +2,7 @@ import React, {MouseEvent, PropsWithChildren} from 'react'
 import '../Atoms/Button.scss';
 import '../Atoms/Color.scss';
 
-type BackgroundColor = 'salam' | '$wish_blue' | 'black';
+type BackgroundColor = string;
 type OnClickAdapter<E extends HTMLElement> = (event: MouseEvent<E>) => void
 
 interface ButtonPropsWithoutChildren {
@@ -28,6 +28,7 @@ export const Button = (props: ButtonProps) => {
     <button
       type="button"
       className={['btn', `btn-${size}`, mode].join(' ')}
+      style={{ backgroundColor: backgroundColor }}
       {...restOfProps}
     >
       {children}

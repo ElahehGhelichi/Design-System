@@ -2,14 +2,14 @@
 
 .btn-primary{
   padding:12px 50px;
-  background-color:$sexy-pink;
+  // background-color:$sexy-pink;
   border-radius:4px;
   color:#fff;
   font-size:16px;
   font-family:'Arial';
   border: none;
   &:hover{
-    background-color:$jam-pink;
+    // background-color:$jam-pink;
     cursor: pointer;
   }
 }
@@ -17,15 +17,19 @@
 
 .btn-secondary{
   padding:14px 100px;
-  background-color:$sexy-pink;
+  // background-color:$sexy-pink;
   border-radius:4px;
   color:#fff;     
   font-family:'Arial';
   font-size:16px;
   border:none;
   &:hover{
-    background-color:$jam-pink;
+    // background-color:$jam-pink;
     cursor: pointer;
   }
 
+}
+
+.btn-md{
+  padding:40px 100px;
 }
